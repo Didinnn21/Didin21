@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+    --bg-dark: #050810;
+    /* Lebih deep agar glow menonjol */
+    --bg-darker: #02040a;
+    --primary-color: #2563eb;
+    --accent-color: #2dd4bf;
+    --text-muted: #94a3b8;
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-dark);
+    color: white;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Background Mesh Glow (Aksen Futuristik) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(45, 212, 191, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bg-darker {
+    background-color: var(--bg-darker);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Navbar Modern */
+.navbar {
+    background: rgba(5, 8, 16, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0;
+    /* Jarak standar */
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand span {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* --- Optimized Hero Section --- */
+.hero {
+    min-height: 100vh;
+    padding-top: 100px;
+    /* Jarak dari Navbar fixed-top */
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    /* Latar belakang gelap dengan pendar radial tersembunyi */
+    background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(45, 212, 191, 0.08) 0%, transparent 40%),
+        var(--bg-dark);
+}
+
+/* Badge Status Glowing */
+.glow-box {
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+/* Animasi Denyut (Pulse) */
+.pulse-icon {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.pulse-icon::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background-color: rgba(45, 212, 191, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Typografi Hero */
+.hero h1 {
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+/* Tombol Glassmorphism */
+.btn-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Bayangan Neon Biru pada Tombol */
+.shadow-blue {
+    box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
+}
+
+.shadow-blue:hover {
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.6);
+}
+
+/* Timeline */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    left: -10px;
+    top: 6px;
+    border: 3px solid var(--bg-dark);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Project Cards */
+.card-project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass-border) !important;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    border-radius: 20px !important;
+    /* Corner lebih smooth */
+}
+
+.project-img-wrapper {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(37, 99, 235, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+/* Hover Effects */
+.card-project-link:hover .project-card {
+    transform: translateY(-12px);
+    border-color: rgba(37, 99, 235, 0.5) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 99, 235, 0.1);
+}
+
+.card-project-link:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.card-project-link:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card h5 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-project-link:hover h5 {
+    color: var(--primary-color) !important;
+}
+
+/* Tech Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: rgba(37, 99, 235, 0.15) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--glass-bg);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--glass-border);
+}
+
+.social-icon:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-8px) rotate(8deg);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+    border-color: transparent;
+}
+
+/* Helper Classes */
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-img-wrapper {
+        height: 200px;
+    }
+}
+
+/* Contact Form Styling */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px;
+    padding: 12px 15px;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
