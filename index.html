@@ -1,363 +1,127 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Didin | Informatics Engineering Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Didin | Fullstack Portfolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">DIDIN<span class="text-primary">.DEV</span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sertifikasi">Sertifikasi</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary ms-lg-3 px-4 text-white mt-2 mt-lg-0" href="#kontak">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero d-flex align-items-center">
-        <div class="container text-center" data-aos="zoom-out" data-aos-duration="1500">
-            <div
-                class="d-inline-flex align-items-center rounded-pill bg-dark border border-primary px-3 py-2 mb-4 glow-box">
-                <span class="pulse-icon me-2"></span>
-                <span class="text-primary small fw-bold text-uppercase tracking-widest">Available for Next Project</span>
-            </div>
-    
-            <h1 class="display-2 fw-extrabold mb-4 text-white leading-tight">
-                Didin <br>
-                <span class="text-gradient typed-text"></span>
-            </h1>
-    
-            <p class="lead mb-5 mx-auto text-white-50 fs-5" style="max-width: 650px;">
-                Informatics Engineering student at Institut Digital Ekonomi **LPKIA**. Connecting the dots between
-                **Full-stack Web Development** and **Enterprise Network Architecture**.
-            </p>
-    
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#projects" class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-3 shadow-blue">
-                    Explore My Work <i class="fas fa-arrow-right ms-2"></i>
-                </a>
-                <a href="mailto:d6258113@gmail.com" class="btn btn-glass btn-lg px-5 py-3 fw-bold rounded-3">
-                    Let's Talk
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="container pb-5">
-        <div class="row justify-content-center text-center g-5 opacity-50" data-aos="fade-up">
-            <div class="col-auto"><i class="fab fa-laravel fa-3x"></i></div>
-            <div class="col-auto"><i class="fab fa-php fa-3x"></i></div>
-            <div class="col-auto"><i class="fab fa-js fa-3x"></i></div>
-            <div class="col-auto"><i class="fab fa-mysql fa-3x"></i></div>
-            <div class="col-auto"><i class="fab fa-bootstrap fa-3x"></i></div>
-            <div class="col-auto"><i class="fas fa-network-wired fa-3x"></i></div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#home">DIDIN<span class="text-cyan">.DEV</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center text-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sertifikasi">Sertifikasi</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta mt-2 mt-lg-0" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <section id="profil" class="py-5">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 text-center" data-aos="fade-right">
-                    <div class="profile-img-container position-relative">
-                        <img src="img/Didin.jpg" alt="DIDIN" class="img-fluid rounded-4 shadow-lg profile-img">
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <h6 class="text-primary fw-bold mb-2">PROFESSIONAL PROFILE</h6>
-                    <h2 class="fw-bold mb-4 text-white display-5">Junior Web Developer & IT Support</h2>
-                    <p class="text-secondary mb-4 fs-5">
-                        Saya adalah mahasiswa Informatika semester 5 di <strong>Institut Digital Ekonomi LPKIA</strong>
-                        (NRP: 230414019). Memiliki pengalaman teknis dalam pengembangan aplikasi web modern menggunakan
-                        Laravel dan pengelolaan infrastruktur jaringan Cisco.
-                    </p>
-                    <div class="row g-4 mb-4">
-                        <div class="col-sm-6">
-                            <h6 class="fw-bold text-white"><i class="fas fa-code text-primary me-2"></i> Development
-                            </h6>
-                            <p class="small text-secondary">Laravel, PHP, MySQL, Framework7, Flutter.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="fw-bold text-white"><i class="fas fa-network-wired text-primary me-2"></i>
-                                Networking</h6>
-                            <p class="small text-secondary">Cisco CCNA (ITN, SRWE, ENSA).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section id="home" class="hero">
+    <span class="orb one"></span><span class="orb two"></span>
+    <div class="container text-center" data-aos="zoom-out">
+      <div class="status-pill"><span class="pulse"></span> Available for Next Project</div>
+      <h1 class="hero-title">Didin<br><span class="gradient-text typed-text"></span></h1>
+      <p class="hero-copy">Mahasiswa Informatika di Institut Digital Ekonomi LPKIA yang berfokus pada pengembangan web modern, database, dan infrastruktur jaringan enterprise.</p>
+      <div class="d-flex justify-content-center gap-3 mt-5">
+        <a href="#projects" class="btn btn-neon">Explore My Work <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        <a href="mailto:d6258113@gmail.com" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="tech-strip">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up">
+        <div class="tech-icon"><i class="fab fa-laravel"></i></div><div class="tech-icon"><i class="fab fa-php"></i></div><div class="tech-icon"><i class="fab fa-js"></i></div><div class="tech-icon"><i class="fas fa-database"></i></div><div class="tech-icon"><i class="fab fa-bootstrap"></i></div><div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="profil" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right"><div class="profile-photo"><img src="img/Didin.jpg" alt="Foto Didin"></div></div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="section-label">Professional Profile</div>
+          <h2 class="font-display display-5 fw-bold mb-4">Junior Web Developer & IT Support</h2>
+          <p class="text-muted-custom fs-5 lh-lg mb-4">Saya adalah mahasiswa Informatika semester 5 di <strong class="text-white">Institut Digital Ekonomi LPKIA</strong> dengan pengalaman teknis dalam membangun aplikasi web berbasis Laravel serta mengelola jaringan Cisco.</p>
+          <div class="row g-3">
+            <div class="col-md-6"><div class="skill-card"><h6 class="fw-bold"><i class="fa-solid fa-code"></i>Development</h6><p class="small text-muted-custom mb-0">Laravel, PHP, MySQL, Framework7, Flutter.</p></div></div>
+            <div class="col-md-6"><div class="skill-card"><h6 class="fw-bold"><i class="fa-solid fa-network-wired"></i>Networking</h6><p class="small text-muted-custom mb-0">Cisco CCNA: ITN, SRWE, ENSA.</p></div></div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="pendidikan" class="py-5 bg-darker">
-        <div class="container py-5">
-            <h2 class="text-center fw-bold mb-5 text-white display-6" data-aos="fade-up">Riwayat Pendidikan</h2>
-            <div class="timeline" data-aos="fade-up">
-                <div class="timeline-item border-start border-primary border-3 ps-4 pb-5 position-relative">
-                    <div class="timeline-dot"></div>
-                    <h4 class="fw-bold text-white">S1 Informatika</h4>
-                    <p class="mb-1 text-primary fw-bold">IDE LPKIA Bandung | 2023 - Sekarang</p>
-                    <p class="small text-secondary">Mempelajari rekayasa perangkat lunak, sistem basis data, dan
-                        administrasi jaringan enterprise.</p>
-                </div>
-                <div class="timeline-item border-start border-primary border-3 ps-4 position-relative">
-                    <div class="timeline-dot"></div>
-                    <h4 class="fw-bold text-white">SMK Korpri Majalengka</h4>
-                    <p class="mb-1 text-primary fw-bold">Teknik Komputer & Jaringan | Lulus 2023</p>
-                    <p class="small text-secondary">Fokus pada instalasi jaringan, administrasi server, dan pemeliharaan
-                        perangkat keras.</p>
-                </div>
-            </div>
+  <section id="pendidikan" class="section-pad">
+    <div class="container">
+      <div class="glass-card p-4 p-lg-5" data-aos="fade-up">
+        <div class="text-center mb-5"><div class="section-label">Academic Footprint</div><h2 class="font-display fw-bold">Riwayat Pendidikan</h2></div>
+        <div class="timeline-box">
+          <div class="edu-item"><h5 class="fw-bold">S1 Informatika</h5><p class="text-cyan fw-bold mb-1">IDE LPKIA Bandung | 2023 - Sekarang</p><p class="small text-muted-custom">Mempelajari rekayasa perangkat lunak, basis data, dan administrasi jaringan enterprise.</p></div>
+          <div class="edu-item"><h5 class="fw-bold">SMK Korpri Majalengka</h5><p class="text-cyan fw-bold mb-1">Teknik Komputer & Jaringan | Lulus 2023</p><p class="small text-muted-custom">Fokus pada instalasi jaringan, administrasi server, dan pemeliharaan perangkat keras.</p></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h6 class="text-primary fw-bold text-uppercase">Karya Digital</h6>
-                <h2 class="fw-bold text-white display-6">Project Unggulan</h2>
-                <hr class="mx-auto bg-primary" style="width: 60px; height: 4px; opacity: 1;">
-            </div>
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up"><div class="section-label">Karya Digital</div><h2 class="font-display fw-bold">Project Unggulan</h2></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up"><a href="https://pkl-production-c231.up.railway.app" target="_blank"><div class="glass-card project-card"><div class="project-img"><img src="img/Kestore-1.png" alt="Marketplace Kestoreid"></div><div class="p-4"><span class="badge-tech mb-3">Laravel</span><h5 class="fw-bold text-white">Marketplace Kestoreid</h5><p class="text-muted-custom small">Platform e-commerce apparel custom menggunakan Laravel dan MySQL.</p><span class="project-link">View Project <i class="fa-solid fa-arrow-right ms-1"></i></span></div></div></a></div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120"><a href="https://web-production-1c9505.up.railway.app" target="_blank"><div class="glass-card project-card"><div class="project-img"><img src="img/Pustaka_Raya.png" alt="Manajemen Perpustakaan"></div><div class="p-4"><span class="badge-tech mb-3">Web App</span><h5 class="fw-bold text-white">Manajemen Perpustakaan</h5><p class="text-muted-custom small">Sistem informasi pengelolaan buku dan peminjaman secara digital.</p><span class="project-link">View Case Study <i class="fa-solid fa-arrow-right ms-1"></i></span></div></div></a></div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="240"><div class="glass-card project-card"><div class="project-img"><img src="img/Kestore-2.png" alt="SIMARSIP Mobile"></div><div class="p-4"><span class="badge-tech mb-3">Mobile App</span><h5 class="fw-bold text-white">SIMARSIP Mobile</h5><p class="text-muted-custom small">Aplikasi peminjaman alat kampus menggunakan Framework7.</p><span class="project-link">See App <i class="fa-solid fa-arrow-right ms-1"></i></span></div></div></div>
+      </div>
+    </div>
+  </section>
 
-            <div class="row g-4 text-white">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <a href="https://pkl-production-c231.up.railway.app" target="_blank" class="card-project-link">
-                        <div class="card project-card h-100 border-0 shadow">
-                            <div class="project-img-wrapper position-relative">
-                                <div id="carouselKestore" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
-                                    <div class="carousel-inner h-100">
-                                        <div class="carousel-item active h-100">
-                                            <img src="img/Kestore-1.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <img src="img/Kestore-2.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <img src="img/Kestore-3.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-overlay">
-                                    <span class="btn btn-outline-light btn-sm fw-bold px-4">Buka Demo <i
-                                            class="fas fa-external-link-alt ms-2"></i></span>
-                                </div>
-                            </div>
-                            <div class="card-body p-4">
-                                <h5 class="fw-bold">Marketplace Kestoreid</h5>
-                                <p class="small text-secondary">Platform e-commerce apparel custom menggunakan Laravel
-                                    dan MySQL.</p>
-                                <span class="badge">Laravel</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://web-production-1c9505.up.railway.app" target="_blank" class="card-project-link">
-                        <div class="card project-card h-100 border-0 shadow">
-                            <div class="project-img-wrapper position-relative">
-                                <div id="carouselKestore" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
-                                    <div class="carousel-inner h-100">
-                                        <div class="carousel-item active h-100">
-                                            <img src="img/Pustaka_Raya.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <img src="img/Pustaka_Raya.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
-                                        </div>
-                                        <div class="carousel-item h-100">
-                                            <img src="img/Pustaka_Raya.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-overlay">
-                                    <span class="btn btn-outline-light btn-sm fw-bold px-4">Buka Demo <i
-                                            class="fas fa-external-link-alt ms-2"></i></span>
-                                </div>
-                            </div>
-                            <div class="card-body p-4">
-                                <h5 class="fw-bold">Manajemen Perpustakaan</h5>
-                                <p class="small text-secondary">Sistem informasi pengelolaan data buku dan peminjaman
-                                    secara digital.</p>
-                                <span class="badge">Web App</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card project-card h-100 border-0 shadow">
-                        <div class="project-img-wrapper position-relative">
-                            <div id="carouselKestore" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
-                                <div class="carousel-inner h-100">
-                                    <div class="carousel-item active h-100">
-                                        <img src="img/Kestore-1.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
-                                    </div>
-                                    <div class="carousel-item h-100">
-                                        <img src="img/Kestore-2.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
-                                    </div>
-                                    <div class="carousel-item h-100">
-                                        <img src="img/Kestore-3.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <span class="btn btn-outline-light btn-sm fw-bold px-4">Buka Demo <i
-                                        class="fas fa-external-link-alt ms-2"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold">SIMARSIP Mobile</h5>
-                            <p class="small text-secondary">Aplikasi peminjaman alat kampus menggunakan Framework7.</p>
-                            <span class="badge">Mobile App</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="sertifikasi" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up"><div class="section-label">Achievement</div><h2 class="font-display fw-bold">Sertifikasi Profesional</h2></div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5" data-aos="flip-left"><div class="glass-card cert-card text-center p-2"><img src="img/Didin (Sertificat-MOS).jpg" class="w-100" alt="MOS Certificate"><div class="p-3"><h6 class="fw-bold mb-1">MOS: Excel Associate</h6><small class="text-cyan fw-bold">Microsoft Certification</small></div></div></div>
+        <div class="col-md-5" data-aos="flip-right"><div class="glass-card cert-card text-center p-2"><img src="img/Didin (Sertificat-Oracle).jpg" class="w-100" alt="Oracle Certificate"><div class="p-3"><h6 class="fw-bold mb-1">Java Foundation - Oracle</h6><small class="text-cyan fw-bold">Oracle Academy</small></div></div></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="sertifikasi" class="py-5 bg-darker">
-        <div class="container py-5">
-            <h2 class="text-center fw-bold mb-5 text-white display-6" data-aos="fade-up">Sertifikasi</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-5" data-aos="flip-left">
-                    <div class="card project-card bg-dark border-0">
-                        <img src="img/Didin (Sertificat-MOS).jpg" class="card-img-top p-2 rounded-4"
-                            alt="MOS Certificate">
-                        <div class="card-body text-white text-center">
-                            <h6 class="fw-bold mb-0">MOS: Excel Associate</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5" data-aos="flip-right" data-aos-delay="200">
-                    <div class="card project-card bg-dark border-0">
-                        <img src="img/Didin (Sertificat-Oracle).jpg" class="card-img-top p-2 rounded-4"
-                            alt="Oracle Certificate">
-                        <div class="card-body text-white text-center">
-                            <h6 class="fw-bold mb-0">Java Foundation - Oracle</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="kontak" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up"><div class="section-label">Connect With Me</div><h2 class="font-display fw-bold">Mari Berkolaborasi</h2></div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5" data-aos="fade-right"><div class="glass-card contact-card h-100"><h4 class="fw-bold mb-3">Punya Proyek Menarik?</h4><p class="text-muted-custom mb-4">Saya terbuka untuk diskusi pengembangan web, website jaringan, atau kolaborasi teknologi lainnya.</p><div class="d-flex align-items-center gap-3 mb-3"><span class="social-icon"><i class="fa-solid fa-envelope"></i></span><div><h6 class="mb-0">Email</h6><small class="text-muted-custom">d6258113@gmail.com</small></div></div><div class="d-flex align-items-center gap-3"><span class="social-icon"><i class="fa-solid fa-location-dot"></i></span><div><h6 class="mb-0">Lokasi</h6><small class="text-muted-custom">Bandung, Indonesia</small></div></div></div></div>
+        <div class="col-lg-7" data-aos="fade-left"><form action="https://formspree.io/f/d6258113@gmail.com" method="POST" class="glass-card contact-card"><div class="row g-3"><div class="col-md-6"><label class="form-label small text-muted-custom">Nama Lengkap</label><input type="text" name="name" class="form-control" placeholder="Nama Anda" required></div><div class="col-md-6"><label class="form-label small text-muted-custom">Alamat Email</label><input type="email" name="email" class="form-control" placeholder="email@contoh.com" required></div><div class="col-12"><label class="form-label small text-muted-custom">Pesan</label><textarea name="message" rows="5" class="form-control" placeholder="Tulis pesan Anda di sini..." required></textarea></div><div class="col-12"><button type="submit" class="btn btn-neon w-100">Kirim Pesan <i class="fa-solid fa-paper-plane ms-2"></i></button></div></div></form></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="kontak" class="py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h6 class="text-primary fw-bold text-uppercase">Connect with Me</h6>
-                <h2 class="fw-bold text-white display-6">Hubungi Saya</h2>
-                <hr class="mx-auto bg-primary" style="width: 60px; height: 4px; opacity: 1;">
-            </div>
-    
-            <div class="row g-5">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="card project-card p-4 h-100 border-0">
-                        <h4 class="fw-bold text-white mb-4">Mari Bicara Proyek</h4>
-                        <p class="text-secondary mb-4">Saya selalu terbuka untuk diskusi mengenai pengembangan web,
-                            arsitektur jaringan, atau kolaborasi IT lainnya.</p>
-    
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="social-icon me-3"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h6 class="mb-0 text-white">Email</h6>
-                                <p class="mb-0 small text-secondary">d6258113@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="social-icon me-3"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h6 class="mb-0 text-white">Lokasi</h6>
-                                <p class="mb-0 small text-secondary">Bandung, Indonesia</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-7" data-aos="fade-left">
-                    <form action="https://formspree.io/f/d6258113@gmail.com" method="POST" class="project-card p-4">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label text-white-50 small">Nama Lengkap</label>
-                                <input type="text" name="name" class="form-control bg-dark border-secondary text-white py-2"
-                                    placeholder="Nama Anda" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label text-white-50 small">Alamat Email</label>
-                                <input type="email" name="email"
-                                    class="form-control bg-dark border-secondary text-white py-2"
-                                    placeholder="email@contoh.com" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label text-white-50 small">Pesan</label>
-                                <textarea name="message" rows="4" class="form-control bg-dark border-secondary text-white"
-                                    placeholder="Tulis pesan Anda di sini..." required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">
-                                    Kirim Pesan <i class="fas fa-paper-plane ms-2"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer class="py-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+      <div class="text-center text-md-start"><h5 class="fw-black mb-1">DIDIN<span class="text-cyan">.DEV</span></h5><small class="text-muted-custom">Informatics Engineering Portfolio</small></div>
+      <div class="d-flex gap-3"><a href="https://github.com/didinnn21" class="social-icon" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/didin-2a3698331" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/didinnn._21" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a><a href="mailto:d6258113@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a></div>
+      <small class="text-muted-custom">© 2026 Didin. All Rights Reserved.</small>
+    </div>
+  </footer>
 
-    <footer class="py-5 border-top border-secondary border-opacity-10">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                    <h4 class="fw-bold text-white mb-1">DIDIN<span class="text-primary">.DEV</span></h4>
-                    <p class="text-secondary mb-0">Informatics Engineering Portfolio</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="social-links d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="https://github.com/didinnn21" class="social-icon" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a href="www.linkedin.com/in/didin-2a3698331" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/didinnn._21" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:d6258113@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                    <p class="text-secondary small mt-3 mb-0">&copy; 2026 Didin - All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-        var typed = new Typed('.typed-text', {
-            strings: ['Kode & Jaringan', 'Laravel & MySQL', 'Fullstack Development'],
-            typeSpeed: 60, backSpeed: 40, loop: true
-        });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
